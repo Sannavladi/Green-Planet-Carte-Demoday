@@ -1,0 +1,690 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&family=Montserrat&family=Tilt+Neon&display=swap');
+
+
+/* Code pour le header - Code pour le header - Code pour le header*/
+header{
+    background-color: #FFCA08;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: auto;
+    width: 100%;
+}
+
+#header_logo {
+    width:80px;
+    height: auto;
+    margin:20px;
+}
+ 
+#header_green-planet {
+    font-family: "Fredoka One", cursive;
+    text-transform: uppercase;
+    font-weight: bold;
+    color:#2362B0;
+    font-size: 1.5rem;
+    display:flex;
+    align-items: center;
+    margin-left:20px;
+}
+
+#header_ul {
+    list-style-type: none;
+    display: flex;
+    margin-right:20px;
+}
+
+.header_li {
+    padding:10px;
+    align-content: end;
+    font-family: "Montserrat";
+    color:#2362B0;
+    text-align: center; 
+}
+
+header a {
+    text-decoration: none;
+    color: #2362B0;
+}
+
+.header_li:hover {
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+#header_burger, #header_toggle {
+    display:none;
+}
+
+/* Fin code pour le header - Fin code pour le header - Fin code pour le header */
+
+/* Code pour le contenu de la page accueil */
+body {
+    width: auto;
+    margin: 0;
+    padding:0;
+}
+
+/* police de caractère de tous les textes */
+
+h1{
+    font-family: "Fredoka One";
+    font-size: 3em;
+}
+
+h2{
+    font-family: "Fredoka One";
+    font-size: 2em;
+}
+
+h3{
+    font-family: "Tilt Neon";
+}
+
+p, li, label, input{
+    font-family: "Montserrat";
+}
+
+h1, h2, h3, p, button{
+    text-align: center;
+}
+
+.accueil-sensibiliser{
+    font-size: 2em;
+}
+
+
+/* MISE EN FORME DES 3 BLOCS AVEC BOUTONS CLIQUABLES*/
+
+button{
+    background-color: #FFCA08;
+    border-color:#FFCA08;
+    border-radius: 50px;
+    height: 40px;
+    width: 150px;
+    cursor: pointer;
+}
+
+/* Flex des 3 blocs */
+.accueil-bloc{
+    display: flex;
+    flex-direction: row;
+    align-content: space-around;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+/* Bloc agenda */
+.accueil-agenda{
+    background-color: #79C2BE;
+    margin: 10px;
+    width: 280px;
+    height: 380px;
+    padding: 10px;
+    transition: all 500ms ease; 
+    border-radius: 20px 0px 0px 20px;
+} 
+
+#accueil-img-agenda {
+    height: 150px;
+    width: 200px;
+}
+
+/* Bloc services*/
+.accueil-services {
+    background-color: #2362B0;
+    border-radius: 20px;
+    margin: 10px;
+    width: 350px;
+    height: 450px;
+    color: white;
+    padding: 10px;
+    margin-bottom: 25px;
+    transition: all 500ms ease;
+} 
+
+.accueil-intervention{
+    font-size: 1.5em;
+}
+
+.accueil-boutton-nos-services{
+    height: 50px;
+    width: 170px;
+    font-size: 1.2em;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+.accueil-boutton-nos-services:hover{
+    height: 50px;
+    width: 170px;
+    font-size: 1.2em;
+    background-color: white;
+    color: #2362B0;
+}
+
+#accueil-img-graine {
+    height: 200px;
+    width: 150px;
+}
+
+/* Bloc blog */
+.accueil-blog{
+    background-color: #79C2BE;
+    margin: 10px;
+    width: 280px;
+    height: 380px;
+    padding: 5px;
+    align-items: flex-start;
+    border-radius: 0px 20px 20px 0px;
+    transition: all 500ms ease; 
+}
+
+.accueil-texte-blog{
+    padding-bottom: 60px;
+}
+
+
+/* MISE EN FORME - MISSIONS DE GREEN PLANET*/
+
+   .accueil-greenplanet {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    font-size: larger;
+    padding: 15px;
+    margin-bottom: 25px;
+   }
+
+.accueil-mission{
+    list-style-type: none;
+    display: flex;
+    flex-direction:column;
+    align-items: flex-start;
+    line-height: 1.8;
+    padding-left:10px;
+}
+
+.accueil-imgliste{
+    height: 25px;
+}
+
+#accueil-img-missions {
+    height: 220px;
+    border-radius: 0px 50px 0px 50px;
+    margin-left: 10px;
+}
+
+/* MISE EN FORME - DERNIERS ATELIERS */
+
+.accueil-fondjaune {
+    background-color: #FFCA08;
+    padding-top: 10px;
+    width: auto;
+    padding-bottom:10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.accueil-ateliers{
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    width:95%;
+}
+
+.accueil-ecole, .accueil-college, .accueil-lycee {
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.photo{
+    width: 90%;
+    border-radius: 50px;
+
+}
+
+/* MISE EN FORME - NEWSLETTER */
+
+.accueil-newsletter{
+    background-color: #79C2BE;
+    width:470px;
+    margin:15px auto 15px auto;
+    padding-bottom: 15px;
+    padding-top: 10px;
+    border-style:double;
+    border-radius: 60px;
+}
+
+.accueil-infonewsletter, form{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    font-size: 1.1em;
+}
+
+/* Newsletter image + texte */
+.accueil-imgnewsletter{
+    height: 75px;
+}
+
+.accueil-contact{
+    display: flex;
+    flex-direction: column;
+    font-weight: bold;
+}
+
+/* Newsletter Formulaire e-mail+bouton */
+
+#email{background-color: antiquewhite;
+    height: 35px;
+    width: 250px;
+    text-align: center;
+    font-style: italic;
+    cursor: auto;
+}
+
+.accueil-bloc form{
+    justify-content: space-evenly;
+}
+
+.accueil-newsletter input{
+    background-color: #FFCA08;
+    border-style: none;
+    border-radius: 50px;
+    height: 40px;
+    width: 170px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.accueil-newsletter input:hover {
+    width:190px;
+}
+
+/* PARTIE HOVER */
+/* pour les 3 blocs agenda, services, blog + bouton newsletter */
+.accueil-blog:hover, .zoom:hover, .accueil-services:hover, .accueil-agenda:hover{
+    transform: scale(1.1);
+transition: all 500ms ease;
+}
+
+/* PARTIE HOVER */
+/* Boutons cliquables */
+.accueil-bloc button:hover{
+    background-color: #2362B0;
+    border-color:#2362B0;
+    color: white;
+
+}
+
+.zoom:hover{
+    background-color: #2362B0;
+    border-color:#2362B0;
+    color: white;
+    border-radius: 50px;
+    height: 40px;
+    width: 175px;
+}
+
+/* PARTIE HOVER */
+/* Ateliers */
+.accueil-ecole:hover, .accueil-college:hover, .accueil-lycee:hover{
+    transform:scale(1.1);
+    transition: all 300ms ease;
+    color:#79C2BE;
+    cursor: pointer;
+}
+
+.accueil-ecole, .accueil-college, .accueil-lycee{
+    transition: all 300ms ease;
+}
+
+/*Code pour les fenêtres pop-up*/
+
+.accueil_popup_overlay { /*Pour le fond, autour de la fenêtre popup*/
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.7);
+    transition: opacity 500ms;
+    visibility: hidden;
+    opacity: 0;
+  }
+  .accueil_popup_overlay:target { /*Pour le contenu visible de la popup*/
+    visibility: visible;
+    opacity: 1;
+  }
+  
+  .accueil_popup {
+    margin: 70px auto;
+    padding: 20px;
+    background: white;
+    border:solid 20px #79C2BE;
+    border-radius: 20px;
+    width: 70%;
+    position: relative;
+    transition: all 2s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .accueil_popup h3 {
+    margin-top: 0;
+    color: black;
+    font-family: "Tilt Neon", Arial, sans-serif;
+    text-align: center;
+  }
+  .accueil_popup .accueil_popup_close {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    transition: all 200ms;
+    font-size: 50px;
+    font-weight: bold;
+    text-decoration: none;
+    color:#2362B0;
+  }
+  .accueil_popup .accueil_popup_close:hover {
+    color: black;
+  }
+  
+  .accueil_popup .accueil_image-popup {
+    overflow: auto;
+    border-radius:20px;
+    width: 60%;
+    height:auto;
+  }
+  
+  .accueil_popup .accueil_texte-popup {
+    overflow: auto;
+    font-family: "Montserrat", Arial;
+    width: 80%;
+  }
+  
+  
+  /*Fin code pour les fenêtres pop-up*/
+
+
+/* Code pour le footer - Code pour le footer - Code pour le footer - */
+
+#footer_blocblanc {
+    background-color: white;
+    height: 80px;
+}
+
+footer {
+    background-color: #2362B0;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+
+    position:fixed; /*pour coller le footer en bas */
+    bottom: 0; left: 0; right: 0;
+    width:100%;
+    height:auto;
+}
+
+#footer_gauche{
+    color:white;
+    font-family: "Montserrat";
+    padding-left:20px;
+    font-size: 0.7rem;
+}
+
+footer a {
+    color:white;
+    text-decoration: underline;
+}
+
+footer a:hover {
+    font-weight: bold;
+    color:#79C2BE;
+ }
+
+ footer .fa-brands {
+    width: 30px;
+    height:auto;
+    color:white;
+    padding-right:20px;
+ }
+
+ footer .fa-brands:hover {
+    color:#79C2BE;
+    cursor: pointer;
+    transform: scale(1.2);
+    transition: all 500ms ease;
+ }
+
+/* Fin code pour le footer - Fin code pour le footer - Fin code pour le footer - */
+
+
+
+/* PARTIE RESPONSIVE TABLETTE*/
+@media (min-width:551px) and (max-width:768px){
+
+
+    h1{
+        font-family: Fredoka one;
+        font-size: 2em;
+    }
+    
+    h2{
+        font-family: Fredoka one;
+        font-size: 1em;
+    }
+
+    .accueil-sensibiliser{
+        margin: 10px;
+    }
+    
+    /* suppression du width sur le carré "Nos Services" */
+    .accueil-services {
+        margin: 5px;
+        height: 500px;
+        padding: 10px;
+        margin-bottom: 25px;
+        margin-right: 8px;
+    }
+
+    .accueil-blog{
+        margin: 10px;
+        width: 280px;
+        height: 380px;
+        align-items: flex-start;
+        transition: all 500ms ease;
+    }
+
+    .accueil-texte-blog{
+        font-size: smaller;
+    }
+    
+    .accueil-greenplanet {
+        display: flex;
+        justify-content: space-around;
+        padding: 15px;
+        margin-bottom: 25px;
+        font-size: smaller;
+        margin-left: -25px;
+       }
+
+       #accueil-img-missions {
+        height: 180px;
+        border-radius: 0px 50px 0px 50px;
+        margin-left: 10px;
+    }
+
+    .accueil-titremissions{
+        margin-top: 20px;
+    }
+
+    .accueil-fondjaune {
+        background-color: #FFCA08;
+    }
+
+    .photo{
+        width: 180px;
+        height: 110px;
+        border-radius: 50px;
+    }
+    
+ 
+    .accueil-newsletter{
+        background-color: #79C2BE;
+        padding-bottom: 20px;
+        border-radius: 60px;
+        margin: auto;
+        margin-top: 20px;
+    }
+
+   
+    }
+
+    /* PARTIE RESPONSIVE TELEPHONE*/
+@media (max-width: 550px){
+
+    /*Code media queries pour le header*/
+     
+    nav
+    {
+        height: 60px;
+        width: auto;
+    }
+    
+    nav #header_ul
+    {
+        display: none;
+        flex-direction: column;
+        background-color: #FFCA08;
+        height: auto;
+        position: relative;
+    }
+    
+    nav #header_ul a {
+        width: 50%;
+    }
+    
+    #header_burger
+    {
+        width: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 10px;
+        font-size: 30px;
+        color:#2362B0;
+        cursor: pointer;
+    }
+    
+    #header_toggle:checked + #header_ul {
+        display: flex;
+    }
+    
+    #header_logo {
+        width:50px;
+        margin:10px;
+    }
+     
+    #header_green-planet {
+        margin-left:10px;
+    }
+    /*Fin code media queries pour le header*/
+    
+    
+    /* COLUMN des 3 blocs */
+    .accueil-bloc{
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+    /* suppression du width sur le carré "Nos Services" */
+    .accueil-services {
+        margin: 10px;
+        height: auto;
+        padding: 0px;
+        padding-bottom: 15px;
+    }
+
+    .accueil-texte-agenda{
+        padding-bottom: 0px;
+    }
+    
+    .accueil-agenda, .accueil-blog{
+        border-radius: 20px;
+    }
+
+    
+   
+    /* COLUMN Missions de Green Planet */
+    .accueil-greenplanet {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 25px;
+        font-size: 1rem;
+       }
+
+    .accueil-titremissions{
+        margin-top: 20px;
+        margin-bottom:0px;
+        }
+
+    #accueil-img-missions {
+        width: 90%;
+        height: auto;
+        }
+    
+    /* COLUMN Nos ateliers */
+    .accueil-ateliers{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .accueil-fondjaune {
+        width:100%;
+        padding-bottom:10px;
+    }
+
+    .accueil-ecole, .accueil-college, .accueil-lycee{
+        padding: 0px;
+        text-align: center;
+    }
+
+    
+    /* NEWSLETTER */
+    
+    
+    .accueil-newsletter{
+        display: flex;
+        width: 300px;
+        flex-direction: column;
+        margin: auto;
+        margin-top: 20px;
+    }
+    
+    .accueil-infonewsletter, form{
+        flex-direction: column;
+    }
+
+
+    }

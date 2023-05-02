@@ -1,0 +1,332 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&family=Montserrat&family=Tilt+Neon&display=swap');
+
+/* Code pour le header - Code pour le header - Code pour le header*/
+header{
+    background-color: #FFCA08;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: auto;
+    width: 100%;
+}
+
+#header_logo {
+    width:80px;
+    height: auto;
+    margin:20px;
+}
+ 
+#header_green-planet {
+    font-family: "Fredoka One", cursive;
+    text-transform: uppercase;
+    font-weight: bold;
+    color:#2362B0;
+    font-size: 1.5rem;
+    display:flex;
+    align-items: center;
+    margin-left:20px;
+}
+
+#header_ul {
+    list-style-type: none;
+    display: flex;
+    margin-right:20px;
+}
+
+.header_li {
+    padding:10px;
+    align-content: end;
+    font-family: "Montserrat";
+    color:#2362B0;
+    text-align: center; 
+}
+
+header a {
+    text-decoration: none;
+    color: #2362B0;
+}
+
+.header_li:hover {
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+#header_burger, #header_toggle {
+    display:none;
+}
+
+/* Fin code pour le header - Fin code pour le header - Fin code pour le header */
+
+/* Code pour le contenu de la page accueil */
+body {
+    width: auto;
+    margin: 0;
+    padding:0;
+}
+
+/* police de caractère de tous les textes */
+
+#poubelle h1{
+    font-family: Fredoka one;
+    font-size: 3em;
+}
+
+#poubelle h2{
+    font-family: Fredoka one;
+    font-size: 2em;
+}
+
+#poubelle h3{
+    font-family: Tilt Neon;
+}
+
+#poubelle p{
+    font-family: Montserrat;
+    font-size: 2em;
+}
+
+#poubelle h1, h2, h3, p, button{
+    text-align: center;
+}
+
+#poubelle a {
+    color:inherit;
+    text-decoration: none;
+}
+
+.poubelle-texte-gif{
+font-size: x-large;
+}
+
+.poubelle-verte{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+   }
+
+.poubelle-bacvert{
+    width:320px;
+    height:420px;
+}
+
+   .poubelle-blanche{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+   }
+
+   .poubelle-imgblanche{
+    width:310px;
+    height:410px;
+   }
+
+   .poubelle-clic{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+   }
+
+   #poubelle  button{
+    background-color: #FFCA08;
+    border-color:#FFCA08;
+    border-radius: 50px;
+    height: 40px;
+    width: 150px;
+    font-family: montserrat;
+    font-size: medium;
+    font-weight: bold;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+
+#poubelle button:hover {
+    background-color: #2362B0;
+    border-color: #2362B0;
+    color:white;
+    cursor: pointer;
+}
+
+.poubelle-clic{
+    background-color: #79C2BE;
+    margin: 50px;
+    padding-bottom: 20px;
+    border-radius: 50px;
+}
+
+.poubelle-logo{
+    height: 90px;
+}
+
+.poubelle-logos{
+    display: flex;
+ align-items: center;
+ align-content: center;
+ justify-content: space-around;
+}
+
+
+
+/* Code pour le footer - Code pour le footer - Code pour le footer - */
+
+#footer_blocblanc {
+    background-color: white;
+    height: 150px;
+}
+
+footer {
+    background-color: #2362B0;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+
+    position:fixed; /*pour coller le footer en bas */
+    bottom: 0; left: 0; right: 0;
+    width:100%;
+    height:auto;
+}
+
+#footer_gauche{
+    color:white;
+    font-family: "Montserrat";
+    padding-left:20px;
+    font-size: 0.7rem;
+}
+
+footer a {
+    color:white;
+    text-decoration: underline;
+}
+
+footer a:hover {
+    font-weight: bold;
+    color:#79C2BE;
+ }
+
+ footer .fa-brands {
+    width: 30px;
+    height:auto;
+    color:white;
+    padding-right:20px;
+ }
+
+ footer .fa-brands:hover {
+    color:#79C2BE;
+    cursor: pointer;
+    transform: scale(1.2);
+    transition: all 500ms ease;
+ }
+
+/* Fin code pour le footer - Fin code pour le footer - Fin code pour le footer - */
+
+@media (max-width: 550px){
+
+    /*Code media queries pour le header*/
+     
+    nav
+    {
+        height: 60px;
+        width:auto;
+    }
+    
+    nav #header_ul
+    {
+        display: none;
+        flex-direction: column;
+        background-color: #FFCA08;
+        height: auto;
+        position: relative;
+    }
+    
+    nav #header_ul a {
+        width: 50%;
+    }
+    
+    #header_burger
+    {
+        width: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 10px;
+        font-size: 30px;
+        color:#2362B0;
+        cursor: pointer;
+    }
+    
+    #header_toggle:checked + #header_ul {
+        display: flex;
+    }
+    
+    #header_logo {
+        width:50px;
+        margin:10px;
+    }
+     
+    #header_green-planet {
+        margin-left:10px;
+    }
+    /*Fin code media queries pour le header*/
+
+    body{
+        margin: 0;
+    }
+
+    #poubelle h1{
+        font-size: 2em;
+    }
+
+    #poubelle h2{
+        font-size: 1.7em;
+    }
+    #poubelle p{
+        font-size: medium;
+    }
+
+    .poubelle-verte{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+   }
+
+   #poubelle button{
+    height: 40px;
+    width: 110px;
+    border-radius: 30px;
+    background-color: #FFCA08;
+    font-family: montserrat;
+    font-size: medium;
+    font-weight: bold;
+   }
+
+   .recyclage-triselectif{
+    width:100%;
+   }
+
+
+.giphy-embed2 {
+    width:90%;
+    border-radius: 50px;
+}
+
+   .poubelle-clic{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    margin: 10px;
+   }
+
+
+   .poubelle-logo{
+    height: 50px;
+}
+}

@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="accueil-style.css" type="text/css">
+        <script src="https://kit.fontawesome.com/8e5b8c7544.js" crossorigin="anonymous"></script>
+        <link rel="icon" type="image/png" sizes="32x32" href="images-accueil/favicon.png">
+        <title>Green Planet | Accueil</title>
+      
+    </head>
+
+    <body>
+        <header> <!--Code pour le header-->
+            <a href="index.html" id="header_green-planet"><img id="header_logo" src="images-general/logo-green-planet.png" alt="logo">Green Planet</a>
+            <nav>  	
+                <label id="header_burger" for="header_toggle">☰</label>
+                <input type="checkbox" id="header_toggle">
+                <ul id="header_ul">
+                    <li class="header_li"><a title="Accueil" href="index.html">Accueil</a></li>
+                    <li class="header_li"><a title="Cart'Eco" href="carte.html">Cart'Eco</a></li>
+                    <li class="header_li"><a title="Nos services" href="nos-services.html">Nos services</a></li>
+                    <li class="header_li"><a title="Qui sommes-nous" href="qui-sommes-nous.html">Qui sommes-nous ?</a></li>
+                    <li class="header_li"><a title="Contact" href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+
+<!--Ici le contenu du site web-->
+
+<div class="accueil-titre">
+    <h1>L'ÉCOLOGIE, UN JEU D'ENFANT !</h1>
+    <p class="accueil-sensibiliser">Sensibiliser et accompagner les établissements scolaires vers une démarche écologique</p>
+</div>
+
+<!--3 blocs alignés avec des boutons cliquables-->
+
+<section class="accueil-bloc">
+<div  class="accueil-agenda">
+    <h3>Actualités</h3>
+    <img id="accueil-img-agenda" src="images-accueil/planning.png" alt="agenda pour prendre rdv">
+    <p class="accueil-texte-agenda">Participez à nos prochains évènements !</p>
+    <button>Agenda</button>
+</div>
+
+<div class="accueil-services">
+    <h3 class="accueil-intervention">Interventions dans les établissements scolaires</h3>
+    <img id="accueil-img-graine" src="images-accueil/enfant graine.png" alt="enfants qui font pousser une plante">
+    <p>Pour les petites graines qui vont semer l'avenir</p>
+    <button class="accueil-boutton-nos-services"><a title="Nos services" href="nos-services.html">Nos services</a></button>
+</div>
+
+<div class="accueil-blog">
+    <h3>Blog</h3>
+    <img>
+    <p class="accueil-texte-blog">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi blanditiis ducimus at fuga quidem recusandae voluptatibus fugiat reprehenderit! Minus error ratione totam? Blanditiis vitae officia maiores dignissimos quidem, saepe animi.</p>
+    <button>Voir plus</button>
+</div>
+</section>
+
+<!--Les missions de green planet, fond blanc-->
+
+<h2 class="accueil-titremissions">LES MISSIONS DE GREEN PLANET</h2>
+<div class="accueil-greenplanet">
+    <ul  class="accueil-mission">
+        <li><img class="accueil-imgliste" src="images-accueil/economiser-lenergie.png" alt="main pousse"> Sensibiliser à l'écologie par le jeu</li>
+        <li><img class="accueil-imgliste" src="images-accueil/economiser-lenergie.png" alt="main pousse"> Rendre le recyclage accessible dès le plus jeune age</li>
+        <li><img class="accueil-imgliste" src="images-accueil/economiser-lenergie.png" alt="main pousse"> Animer des ateliers ludiques autour du "Do it Yourself"</li>
+        <li><img class="accueil-imgliste" src="images-accueil/economiser-lenergie.png" alt="main pousse"> Organiser des sorties pour découvrir la faune et la flore</li>
+        <li><img class="accueil-imgliste" src="images-accueil/economiser-lenergie.png" alt="main pousse"> Proposer des Green kits pour les classes et les foyers</li>
+        <li><img class="accueil-imgliste" src="images-accueil/economiser-lenergie.png" alt="main pousse"> Organiser des clean walks avec les établissements scolaires</li>
+    </ul>
+    <img id="accueil-img-missions" src="images-accueil/mission green planet.JPG" alt="enfants qui recyclent">
+</div>
+
+<!--Bandeau derniers ateliers avec 3 blocs texte/image sur fond jaune-->
+
+<div class="accueil-fondjaune">
+
+    <h2>NOS DERNIERS ATELIERS</h2>
+
+    <section class="accueil-ateliers">
+         <a class="accueil-bouton" href="#accueil_popup1">
+        <div class="accueil-ecole">
+        <p>A la découverte de la flore locale<br>Ecole Dorléac</p>
+            <img class="photo" src="images-accueil/flore.JPG" alt="enfants qui découvrent la flore">
+        </div></a>
+                    <!--Fenetre pop-up pour interventions en maternelle-->
+                    <div id="accueil_popup1" class="accueil_popup_overlay">
+                        <div class="accueil_popup">
+                            <a class="accueil_popup_close" href="#">&times;</a>
+                            <h3 class="accueil_titre-popup">Interventions dans les écoles maternelles</h3>
+                            <img class="accueil_image-popup" src="images-accueil/flore.JPG" alt="image enfants">
+                            <p class="accueil_texte-popup">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sit delectus, consequatur est saepe explicabo id optio repudiandae nam, magni tempora quaerat nesciunt repellendus iure. Dignissimos minima quaerat soluta voluptates! Corrupti!</p>
+                        </div>
+                    </div>
+                    <!--Fin de fenetre pop-up pour interventions en maternelle-->    
+    
+        <a class="accueil-bouton" href="#accueil_popup2">
+            <div class="accueil-college">
+            <p>Atelier recyclerie<br>Collège Clémenceau</p>
+            <img class="photo" src="images-accueil/recyclerie.JPG" alt="collegiens qui nettoyent la nature">
+    </div></a>
+
+                    <!--Fenetre pop-up pour interventions en collège-->
+                    <div id="accueil_popup2" class="accueil_popup_overlay">
+                        <div class="accueil_popup">
+                            <a class="accueil_popup_close" href="#">&times;</a>
+                            <h3 class="accueil_titre-popup">Interventions dans les collèges</h3>
+                            <img class="accueil_image-popup" src="images-accueil/recyclerie.JPG" alt="image enfants">
+                            <p class="accueil_texte-popup">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sit delectus, consequatur est saepe explicabo id optio repudiandae nam, magni tempora quaerat nesciunt repellendus iure. Dignissimos minima quaerat soluta voluptates! Corrupti!</p>
+                        </div>
+                    </div>
+                    <!--Fin de fenetre pop-up pour interventions en collège-->    
+
+    
+        <a class="accueil-bouton" href="#accueil_popup3">
+            <div class="accueil-lycee">
+            <p>Clean walk au parc de Vincennes<br>Lycée Jules Ferry </p>
+        <img class="photo" src="images-accueil/groupe ados.png" alt="lycéens qui font un atelier diy">
+    </div></a>
+
+                    <!--Fenetre pop-up pour interventions en lycée-->
+                    <div id="accueil_popup3" class="accueil_popup_overlay">
+                        <div class="accueil_popup">
+                            <a class="accueil_popup_close" href="#">&times;</a>
+                            <h3 class="accueil_titre-popup">Interventions dans les collèges</h3>
+                            <img class="accueil_image-popup" src="images-accueil/groupe ados.png" alt="image enfants">
+                            <p class="accueil_texte-popup">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sit delectus, consequatur est saepe explicabo id optio repudiandae nam, magni tempora quaerat nesciunt repellendus iure. Dignissimos minima quaerat soluta voluptates! Corrupti!</p>
+                        </div>
+                    </div>
+                    <!--Fin de fenetre pop-up pour interventions en lycée-->   
+
+</section>
+</div>
+
+<!--Formulaire de Newsletter-->
+
+<section class="accueil-newsletter">
+    <div class="accueil-infonewsletter">
+        <img class="accueil-imgnewsletter" src="images-accueil/latest-news.png" alt="megaphone qui crie Latest Newsletter">
+        <div class="accueil-contact"><p>Restons en contact !</p></div>
+    </div>
+        <form class="accueil-form">
+            <label for="email"><input id="email" name="email" type="email" required placeholder="Entrez votre adresse e-mail"/></label>
+            <input class="zoom" type="submit" value="S'inscrire à la Newsletter"/>
+        </form>
+</section>
+
+
+        <div id="footer_blocblanc"></div><!--Code pour le footer-->
+        <footer>
+            <div id="footer_gauche">
+                <p id="footer_green-planet">©Green Planet - 2023</p>
+                <p id="footer_mentions"><a href="mentions-legales.html">Mentions légales</a></p>
+            </div>
+            <div id="footer_droite">
+                <i class="fa-brands fa-linkedin-in"></i>
+                <i class="fa-brands fa-facebook-f"></i>
+                <i class="fa-brands fa-instagram"></i>
+            </div>
+        </footer>
+    </body>
+
+</html>

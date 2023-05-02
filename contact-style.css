@@ -1,0 +1,424 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&family=Montserrat&family=Tilt+Neon&display=swap');
+
+/* Code pour le header - Code pour le header - Code pour le header*/
+header{
+    background-color: #FFCA08;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: auto;
+    width: 100%;
+}
+
+#header_logo {
+    width:80px;
+    height: auto;
+    margin:20px;
+}
+ 
+.nos-services_interventions {
+    width: auto;
+    color: white;
+    background-color:  #2362B0;
+    text-align: center;
+    font-family: "Tilt Neon", Arial; 
+    font-size: 1.5rem;
+    padding: 15px;
+ }
+
+#header_ul {
+    list-style-type: none;
+    display: flex;
+    margin-right:20px;
+}
+
+.header_li {
+    padding:10px;
+    align-content: end;
+    font-family: "Montserrat";
+    color:#2362B0;
+    text-align: center;
+}
+
+header a {
+    text-decoration: none;
+    color: #2362B0;
+}
+
+.header_li:hover {
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+#header_burger, #header_toggle {
+    display:none;
+}
+
+/* Fin code pour le header - Fin code pour le header - Fin code pour le header */
+
+body {
+    width: auto;
+    margin: 0;
+    padding:0;
+}
+
+
+/* Code pour le titre principal Contact */
+#contact_titre1 {
+    font-family: "Fredoka One", cursive;
+    text-transform: uppercase;
+    text-align: center;
+    padding:auto;
+    font-size:2rem;
+}
+
+/* Code pour organiser les blocs */
+
+#contact_blocgeneral {
+    display: flex;
+    width: auto;
+    justify-content: space-between;
+    margin: 0 20px 0 20px;
+}
+
+.contact_titre2 {
+    font-family: "Tilt Neon", Arial;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    font-size:1.5rem;  
+    color:white;
+}
+
+#contact_gauche {
+    float:left;
+    width:50%;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#contact_droite {
+    width: 50%;
+}
+
+/* Code pour le bloc "Green Planet" avec les informations générales */
+#contact_carte {
+    background-color: #2362B0;
+    margin-right:10px;
+    padding:5px;
+    border-radius: 20px 0 20px 0;
+}
+
+#contact_informations {
+    list-style-type: none;
+}
+
+.contact_list {
+    font-family: "Montserrat", Arial;
+    align-items: center;
+    padding:8px;
+    display: flex;
+    align-items: center;
+    color:white;
+}
+
+.contact_list a {
+    color:white;
+}
+
+.contact_icones {
+    width:20px;
+    height: auto;
+    padding-right:5px;
+}
+
+
+/* Code pour le bloc "Nos secteurs d'intervention" */
+#contact_secteurs {
+    margin-right: 10px;
+    padding:8px;
+    text-align:center;
+    margin-bottom: 50px;
+}
+
+.contact_loc {
+    height:40px;
+    width:auto;
+}
+
+#contact_texteintervention {
+    font-family: "Montserrat", Arial;
+    text-align: center;
+}
+
+/* Code pour le bloc formulaire "Nous contacter" */
+.contact_titre3 {
+    font-family: "Tilt Neon", Arial;
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+    color:black; 
+    font-size: 1.5rem;
+}
+
+#contact_formulaire {
+    background-color:#79C2BE;
+    margin-left:10px;
+    padding:5px;
+    border-radius: 20px 0 20px 0;
+}
+
+#contact_survey-form {
+    font-family: "Montserrat";
+    color:black;
+    padding-right: 20px;
+    
+}
+
+.contact_case { 
+    display:flex;
+    flex-direction: column;
+    margin:10px;
+}
+
+#contact_name-label, #contact_email-label, #contact_comments-label {
+    padding-left:30px;
+}
+
+#contact_name, #contact_email {
+    width: auto;
+    height: 40px;
+    border:none;
+    border-radius:30px;
+    margin:10px;
+}
+
+#contact_comments {
+    width: auto;
+    border:none;
+    border-radius:30px;
+    margin:10px;
+}
+
+#contact_survey-form ::placeholder {
+    color:#79C2BE;
+    padding:10px;
+    font-family: "Montserrat";
+}
+
+#contact_survey-form textarea {
+    font-family: "Montserrat";
+    padding:15px;
+}
+
+#contact_survey-form input {
+    font-family: "Montserrat";
+}
+
+
+
+/* Code pour le bloc formulaire : bouton envoi */
+
+.contact_end {
+    display:flex;
+    justify-content: flex-end;
+}
+
+#contact_submit {
+    background-color: #FFCA08;
+    border-radius: 50%;
+    border-style:none;
+    width: 50px;
+    height: 50px;
+    margin:10px;
+}
+
+#contact_icon-envoi {
+    color:white;  
+    font-size: 1.7rem;
+}
+
+#contact_submit:hover {
+    background-color:#2362B0;
+    color:white;
+    cursor:pointer;
+    transform: scale(1.2);
+    transition: all 500ms ease;
+}
+
+/* Code pour le footer - Code pour le footer - Code pour le footer - */
+
+#footer_blocblanc {
+    background-color: white;
+    height: 80px;
+}
+
+footer {
+    background-color: #2362B0;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+
+    position:fixed; /*pour coller le footer en bas */
+    bottom: 0; left: 0; right: 0;
+    width:100%;
+    height:auto;
+}
+
+#footer_gauche{
+    color:white;
+    font-family: "Montserrat";
+    padding-left:20px;
+    font-size: 0.7rem;
+}
+
+footer a {
+    color:white;
+    text-decoration: underline;
+}
+
+footer a:hover {
+    font-weight: bold;
+    color:#79C2BE;
+ }
+
+ footer .fa-brands {
+    width: 30px;
+    height:auto;
+    color:white;
+    padding-right:20px;
+ }
+
+ footer .fa-brands:hover {
+    color:#79C2BE;
+    cursor: pointer;
+    transform: scale(1.2);
+    transition: all 500ms ease;
+ }
+
+/* Fin code pour le footer - Fin code pour le footer - Fin code pour le footer - */
+
+
+@media (min-width:551px) and (max-width:768px) {
+/*Code media queries pour le contenu de contact*/
+#contact_blocgeneral {
+    display: flex;
+    width: auto;
+    flex-direction: column;
+}
+
+#contact_gauche {
+    width:100%;
+}
+
+#contact_droite {
+    width: 100%;
+}
+
+#contact_carte {
+    margin-right:10px;
+}
+
+#contact_secteurs {
+    margin-right: 0;
+    margin-bottom:10px;
+}
+
+#contact_formulaire {
+    margin-left:0;
+}
+
+/*Fin code media queries pour le contenu de contact*/
+
+}
+
+
+@media (max-width: 550px) {
+    /*Code media queries pour le header*/
+    nav
+    {
+        height: 60px;
+        width: auto;
+    }
+ 
+    nav #header_ul
+    {
+        display: none;
+        flex-direction: column;
+        background-color: #FFCA08;
+        height: auto;
+        position: relative;
+    }
+ 
+    nav #header_ul a {
+        width: 50%;
+    }
+ 
+    #header_burger
+    {
+        width: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 10px;
+        font-size: 30px;
+        color:#2362B0;
+        cursor: pointer;
+    }
+
+    #header_toggle:checked + #header_ul {
+        display: flex;
+    }
+
+    #header_logo {
+        width:50px;
+        margin:10px;
+    }
+     
+    #header_green-planet {
+        margin-left:10px;
+    }
+
+    /*Fin code media queries pour le header*/
+
+    /*Code media queries pour le contenu de contact*/
+    #contact_blocgeneral {
+        display: flex;
+        width: auto;
+        flex-direction: column;
+    }
+
+    #contact_gauche {
+        width:100%;
+    }
+    
+    #contact_droite {
+        width: 100%;
+    }
+
+    #contact_carte {
+        margin-right:10px;
+        }
+    
+
+    #contact_secteurs {
+        margin-right: 0;
+        margin-bottom:20px;
+    }
+
+    .contact_loc {
+        margin-left:30px;
+    }
+
+    #contact_formulaire {
+        margin-left:0;
+    }
+
+    /*Fin code media queries pour le contenu de contact*/
+
+}

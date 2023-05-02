@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="contact-style.css" type="text/css">
+        <link rel="icon" type="image/png" sizes="32x32" href="images-accueil/favicon.png">
+        <script src="https://kit.fontawesome.com/8e5b8c7544.js" crossorigin="anonymous"></script>
+        <title>Green Planet | Contact</title>
+      
+    </head>
+
+    <body>
+        <header> <!--Code pour le header-->
+            <a href="index.html" id="header_green-planet"><img id="header_logo" src="images-general/logo-green-planet.png" alt="logo">Green Planet</a>            <nav>  	
+                <label id="header_burger" for="header_toggle">☰</label>
+                <input type="checkbox" id="header_toggle">
+                <ul id="header_ul">
+                    <li class="header_li"><a title="Accueil" href="index.html">Accueil</a></li>
+                    <li class="header_li"><a title="Cart'Eco" href="carte.html">Cart'Eco</a></li>
+                    <li class="header_li"><a title="Nos services" href="nos-services.html">Nos services</a></li>
+                    <li class="header_li"><a title="Qui sommes-nous" href="qui-sommes-nous.html">Qui sommes-nous ?</a></li>
+                    <li class="header_li"><a title="Contact" href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+
+<!--Ici le contenu du site web-->
+        <section id="contact">
+
+            <h1 id="contact_titre1">Contact</h1>
+
+            <div id="contact_blocgeneral"> <!--Bloc général pour flexbox-->
+
+                <div id="contact_gauche"><!--Blocs à gauche-->
+
+                    <!--Carte d'informations générales-->
+                    <div id="contact_carte">
+                        <h2 class="contact_titre2">Green Planet</h2>
+                        <ul id="contact_informations">
+                            <li class="contact_list"><img class="contact_icones" src="images-contact/localisateur.svg" alt="icone adresse">15 rue Henri Chevreau, 75020 Paris</li>
+                            <li class="contact_list"><img class="contact_icones" src="images-contact/telephone.svg" alt="icone numero">06 01 02 03 04</li>
+                            <li class="contact_list"><img class="contact_icones" src="images-contact/mail.svg" alt="icone mail"><a href="#">contact@greenplanet.com</a></li>
+                            <li class="contact_list"><img class="contact_icones" src="images-contact/horloge.svg" alt="icone dispo">Du lundi au vendredi, 9h à 18h</li>
+                        </ul>
+                    </div>
+
+                    <!--Nos secteurs d'intervention-->
+                    <div id="contact_secteurs">
+                        <h2 class="contact_titre3"><img class="contact_loc" src="images-contact/loc2.svg" alt="icone localisation">Nos secteurs d'intervention</h2>
+                        <div id="contact_texteintervention">Nous intervenons partout en France métropolitaine</div>
+                    </div>
+
+                </div><!--Fermeture blocs à gauche-->
+
+                <div id="contact_droite"><!--Bloc à droite-->
+
+                    <!--Formulaire de contact-->
+                    <div id="contact_formulaire">
+                        <h2 class="contact_titre3">Nous contacter</h2>
+
+                        <form id="contact_survey-form">
+                            <div class="contact_case">
+                                <label for="contact_name" id="contact_name-label">Prénom Nom</label> <input type="text" id="contact_name" placeholder="Malik Dupont" required/>
+                            </div>
+                        
+                            <div class="contact_case">
+                                <label for="contact_email" id="contact_email-label">Votre adresse mail</label> <input type="email" id="contact_email" placeholder="malik.dupont@monmail.com" required/>
+                            </div>
+
+
+                            <div class="contact_case">
+                                <label for="contact_comments" id="contact_comments-label">Votre message</label>
+                                <textarea id="contact_comments" name="comments" rows="5" cols="40" placeholder="Mon message"></textarea>
+                            </div>
+
+                            <div class="contact_end">
+                                <button type="submit" id="contact_submit"><div id="contact_icon-envoi"><i class="fa-regular fa-paper-plane"></i></div></button>
+                            </div>    
+                        </form>
+
+
+                    </div>
+
+                </div> <!--Fermeture bloc à droite-->
+
+            </div> <!--Fermeture bloc général-->   
+        </section>
+
+        <div id="footer_blocblanc"></div><!--Code pour le footer-->
+        <footer>
+            <div id="footer_gauche">
+                <p id="footer_green-planet">©Green Planet - 2023</p>
+                <p id="footer_mentions"><a href="mentions-legales.html">Mentions légales</a></p>
+            </div>
+            <div id="footer_droite">
+                <i class="fa-brands fa-linkedin-in"></i>
+                <i class="fa-brands fa-facebook-f"></i>
+                <i class="fa-brands fa-instagram"></i>
+            </div>
+        </footer>
+    </body>
+
+</html>

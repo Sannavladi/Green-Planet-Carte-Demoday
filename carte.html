@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="carte.css">
+        <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css"
+        integrity="sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04xyI="
+        crossorigin=""/>
+        <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"
+        integrity="sha256-WBkoXOwTeyKclOHuWtc+i2uENFpDZ9YPdf5Hf+D7ewM="
+        crossorigin=""></script>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet/dist/leaflet.css" />
+        <script src="https://cdn.jsdelivr.net/npm/leaflet/dist/leaflet.js"></script>
+        <link rel="icon" type="image/png" sizes="32x32" href="images-accueil/favicon.png">
+    </head>
+    
+    <body>
+        <header>
+            <a href="index.html" id="header_green-planet"><img id="header_logo" src="img/logo-green-planet.png" alt="logo">Green Planet</a>
+            <nav>
+                <label id="header_burger" for="header_toggle">☰</label>
+                <input type="checkbox" id="header_toggle">
+                <ul id="header_ul">
+                    <li class="header_li"><a title="Accueil" href="index.html">Accueil</a></li>
+                    <li class="header_li"><a title="Cart'Eco" href="carte.html">Cart'Eco</a></li>
+                    <li class="header_li"><a title="Nos services" href="nos-services.html">Nos services</a></li>
+                    <li class="header_li"><a title="Qui sommes-nous" href="qui-sommes-nous.html">Qui sommes-nous ?</a></li>
+                    <li class="header_li"><a title="Contact" href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+        <h1>Notre Cart'Eco<div id="interrogation"></h1>
+			<h2>Green Planet</h2>  
+        <!-- <div id="explication">Ecologique et économique ! La map interactive de Green Planet permet aux utilisateurs et utilisatrices de découvrir des magasins où acheter des produits alimentaires en date courte pour éviter le gaspillage alimentaire ainsi que des magasins pour acheter de seconde main, ou encore faire réparer vos objets pour éviter de les jeter.</div>
+        </div> -->
+
+
+            <div id="map"></div>
+            <dialog id="laModale"><!--Fenêtre modale pour l'ajout de marqueurs par l'utilisateur.-->
+                <p>Un bon plan à partager ?</p>
+                <form method="dialog">
+                    <p>
+                        <label>Nom du lieu :
+                            <input type="text" id="titre" />
+                        </label>
+                    </p>
+                    <p>
+                        <label>De quoi s'agit-il ? :
+                            <input id="inputField" type="text" placeholder="Ajouter une description..." >
+                        </label>
+                    </p>
+
+                    <p>
+                        <label for="image">Image:
+                            <input type="file" id="image" name="image">
+                        </label>
+                    </p>
+
+                    <fieldset>
+                        <p>Sélectionner une catégorie</p>
+                        <select id="dropdown" name="categorie">
+                            <option value="">Choisir</option>
+                            <option value="réparation">Réparation</option>
+                            <option value="vêtements">Vêtements</option>
+                            <option value="ameublement">Ameublement</option>
+                            <option value="alimentation">Alimentation</option>
+                        </select>
+                    </fieldset>
+                    <div>
+                        <button value="non">Annuler</button>
+                        <button value="oui">Valider</button>
+                    </div>
+                </form>
+            </dialog>
+            <div class="button-container"> <!--Boutons de filtre-->
+                <button id="show-rpr">Réparation</button>
+                <button id="show-vtm">Vêtements</button>
+                <button id="show-ambl">Ameublement</button>
+                <button id="show-almt">Alimentation</button>
+                <button id="show-all">Show All</button>
+                <p id="interrogation">(i)</p>
+                <p id="explication">Ecologique et économique ! La map interactive de Green Planet permet aux utilisateurs et utilisatrices de découvrir des magasins où acheter des produits alimentaires en date courte pour éviter le gaspillage alimentaire, des magasins pour acheter de seconde main et des endroits pour faire réparer des objets et éviter de les jeter.</p>
+            </div>
+      
+            <div id="footer_blocblanc"></div><!--Code pour le footer-->
+            <footer>
+                <div id="footer_gauche">
+                    <p id="footer_green-planet">©Green Planet - 2023</p>
+                    <p id="footer_mentions"><a href="mentions-legales.html">Mentions légales</a></p>
+                </div>
+                <div id="footer_droite">
+                    <i class="fa-brands fa-linkedin-in"></i>
+                    <i class="fa-brands fa-facebook-f"></i>
+                    <i class="fa-brands fa-instagram"></i>
+                </div>
+            </footer>
+            <script src="carte.js"></script>
+
+    </body>
+</html>

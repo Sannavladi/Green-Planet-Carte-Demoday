@@ -1,0 +1,602 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&family=Montserrat&family=Tilt+Neon&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    margin:0;
+    padding:0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#map {
+    width:90% ;
+    height: 500px;
+    border-radius: 30px;
+    box-shadow: 0 0 0 10px rgba(0,0,0,0.1);
+    margin: auto;
+    z-index: 0;
+}
+
+
+/* Code pour le header - Code pour le header - Code pour le header */
+header{
+    background-color: #FFCA08;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: auto;
+    width: 100%;
+}
+
+#header_logo {
+    width:50px;
+    height: auto;
+    margin:20px;
+}
+ 
+#header_green-planet {
+    font-family: "Fredoka One", cursive;
+    text-transform: uppercase;
+    font-weight: bold;
+    color:#2362B0;
+    font-size: 1.5rem;
+    display:flex;
+    align-items: center;
+    margin-left:20px;
+}
+
+#header_ul {
+    list-style-type: none;
+    display: flex;
+    margin-right:20px;
+}
+
+.header_li {
+    padding:10px;
+    align-content: end;
+    font-family: "Montserrat";
+    color:#2362B0;
+    text-align: center;
+}
+
+header a {
+    text-decoration: none;
+    color: #2362B0;
+}
+
+.header_li:hover {
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+#header_burger, #header_toggle {
+    display:none;
+} 
+
+h1{
+    display: flex;
+    font-family: "Fredoka One", cursive;
+    text-transform: uppercase;
+    justify-content: center;
+    text-align: center;
+    font-size:2rem;
+    padding:0 10px 0 10px;
+	margin: 21.44px 0px;
+}
+
+
+h2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+	width: 100%;
+    background-color: #2362b0;
+    color: aliceblue;
+    font-family:"Tilt Neon";
+    font-size:1.5rem;
+    margin-bottom: 20px;
+}
+
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    margin-top:30px;
+    flex-wrap: wrap;
+    gap:5px;
+}
+
+button {
+    font-family: 'Mansalva', cursive;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 10px;
+    height:40px;
+    width:100px;
+    background-color: #2362B0;
+    color: white;
+    cursor:pointer;
+
+}
+
+button:hover {
+    background-color: #1A467A;
+}
+
+.supprimer {
+    background-color: red;
+    font-family: 'Mansalva', cursive;
+    color: white;
+    border: none;
+    padding: 8px 6px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 12px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.supprimer:hover {
+    background-color:  #1A467A;
+}
+
+
+
+#show-rpr {
+    background-color: #CB2B3E;
+    color: white;
+}
+  
+#show-vtm {
+    background-color: #9C2BCB;
+    color: white;
+}
+  
+#show-ambl {
+    background-color:#25AC22 ;
+    color: white;
+}
+  
+#show-almt {
+    background-color:#FFD326;
+    color: white;
+}
+  
+#show-all {
+    background-color: gray;
+    color: white;
+}
+  
+#laModale {
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px #333;
+    padding: 20px;
+    background-color: beige;
+    max-width: 400px;
+    margin: 100px auto;
+    font-family: "Fredoka One", cursive;
+    position:fixed;
+    z-index: 1;
+    color:#2362B0;
+}
+
+
+  /* Style pour les étiquettes et les champs de saisie */
+  label {
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+/* Style pour les champs de texte et de sélection */
+input[type="text"], select {
+  width: 100%;
+  font-size: 16px;
+  padding: 10px;
+  border-radius: 5px;
+  border: 2px solid #ccc;
+  margin-bottom: 20px;
+}
+
+fieldset {
+    padding:10px;
+}
+/* Style pour le champ de sélection */
+select {
+  background-color: #fff;
+  color: black;
+}
+/* Style pour le bouton de fermeture */
+dialog::-webkit-dialog {
+    margin: 0;
+    padding: 0;
+}
+dialog::-webkit-dialog-container {
+    margin: 0;
+    padding: 0;
+}
+dialog > form {
+    margin: 0;
+    padding: 0;
+}
+dialog > form > div {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-top: 20px;
+}
+p {
+    display: block;
+    text-align: center;
+}
+/* Style pour l'option "Show All" */
+select option[value="5"] {
+    font-style: italic;
+    color: #999;
+}
+  select option::before {
+    content: "";
+    display: inline-block;
+    margin-right: 5px;
+    width: 16px;
+    height: 16px;
+    background-image: url("");
+    background-size: cover;
+  }
+
+#laModale p {
+    margin: 10px 0;
+}
+#laModale input[type=text] {
+    padding: 5px;
+    border-radius: 5px;
+    border: none;
+    border: 2px solid black;
+}
+#inputField {
+    height: 60px;
+    outline: none;
+    font-size: 12px;
+    vertical-align: middle;
+    border-radius: 20px;
+    background-color: white;
+}
+#laModale button {
+    background-color: #2362B0;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    border: 2px solid black;
+    font-family: "Fredoka One", cursive;
+    font-size: 12px;
+    width:auto;
+}
+#laModale button:hover {
+    background-color: #1A467A;
+}
+
+/* Pour définir une taille de popup responsive en fonction du contenu*/
+.leaflet-popup-content {
+    max-width: 1200px;
+    max-height: 800px;
+    /*overflow: auto;  un défilement si le contenu ne tient pas dans la taille maximale */
+  }
+
+
+/* Code pour le explication - */
+
+#interrogation {
+    font-family: "Fredoka One", cursive;
+    color:black;
+    z-index:2;
+    text-align: end;
+}
+
+#interrogation:hover + #explication {
+    display:block;
+    border-radius:20px;
+    font-family: "Montserrat";
+    font-size: 0.8rem;
+    z-index:2;
+    width:50vw;
+    background-color: #FFCA08;
+    border-radius: 20px;
+    position:absolute;
+    padding:10px;
+    margin-right:10px;
+    
+
+}
+
+#explication {
+    display: none;
+}
+
+
+
+/* Code pour le footer - Code pour le footer - Code pour le footer - */
+
+#footer_blocblanc {
+    background-color: white;
+    height: 80px;
+}
+
+footer {
+    background-color: #2362B0;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+
+    position:absolute; /*pour coller le footer en bas */
+    bottom: 0; left: 0; right: 0;
+    width:100%;
+    height:50px;
+}
+
+#footer_gauche{
+    color:white;
+    font-family: "Montserrat";
+    padding-left:20px;
+    font-size: 0.7rem;
+}
+
+footer a {
+    color:white;
+    text-decoration: underline;
+}
+
+footer a:hover {
+    font-weight: bold;
+    color:#79C2BE;
+ }
+
+ footer .fa-brands {
+    width: 30px;
+    height:auto;
+    color:white;
+    padding-right:20px;
+ }
+
+ footer .fa-brands:hover {
+    color:#79C2BE;
+    cursor: pointer;
+    transform: scale(1.2);
+    transition: all 500ms ease;
+ }
+
+/* Fin code pour le footer - Fin code pour le footer - Fin code pour le footer - */
+
+
+
+/* PARTIE RESPONSIVE TABLETTE*/
+@media  (max-width:768px){
+
+
+    h1{
+        font-family: Fredoka one;
+        font-size: 2em;
+    }
+    
+    h2{
+        font-family: Fredoka one;
+        font-size: 1em;
+    }
+
+    .accueil-sensibiliser{
+        margin: 10px;
+    }
+    
+    /* suppression du width sur le carré "Nos Services" */
+    .accueil-services {
+        margin: 5px;
+        height: 500px;
+        padding: 10px;
+        margin-bottom: 25px;
+        margin-right: 8px;
+    }
+
+    .accueil-blog{
+        margin: 10px;
+        width: 280px;
+        height: 380px;
+        align-items: flex-start;
+        transition: all 500ms ease;
+    }
+
+    .accueil-texte-blog{
+        font-size: smaller;
+    }
+    
+    .accueil-greenplanet {
+        display: flex;
+        justify-content: space-around;
+        padding: 15px;
+        margin-bottom: 25px;
+        font-size: smaller;
+        margin-left: -25px;
+       }
+
+       #accueil-img-missions {
+        height: 180px;
+        border-radius: 0px 50px 0px 50px;
+        margin-left: 10px;
+    }
+
+    .accueil-titremissions{
+        margin-top: 20px;
+    }
+
+    .accueil-fondjaune {
+        background-color: #FFCA08;
+    }
+
+    .photo{
+        width: 180px;
+        height: 110px;
+        border-radius: 50px;
+    }
+    
+ 
+    .accueil-newsletter{
+        background-color: #79C2BE;
+        padding-bottom: 20px;
+        border-radius: 60px;
+        margin: auto;
+        margin-top: 20px;
+    }
+
+
+
+    /*Code media queries pour le header*/
+     
+    nav
+    {
+        height: 60px;
+        width: auto;
+    }
+    
+    nav #header_ul
+    {
+        display: none;
+        flex-direction: column;
+        background-color: #FFCA08;
+        height: auto;
+        position: relative;
+        z-index:2;
+    }
+    
+    nav #header_ul a {
+        width: 50%;
+    }
+    
+    #header_burger
+    {
+        width: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 10px;
+        font-size: 30px;
+        color:#2362B0;
+        cursor: pointer;
+    }
+    
+    #header_toggle:checked + #header_ul {
+        display: flex;
+    }
+    
+    #header_logo {
+        width:50px;
+        margin:10px;
+    }
+     
+    #header_green-planet {
+        margin-left:10px;
+    }
+    /*Fin code media queries pour le header*/
+
+}
+
+/* PARTIE RESPONSIVE TELEPHONE*/
+@media (max-width: 550px){
+    
+    /* COLUMN des 3 blocs */
+    .accueil-bloc{
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+    /* suppression du width sur le carré "Nos Services" */
+    .accueil-services {
+        margin: 10px;
+        height: auto;
+        padding: 0px;
+        padding-bottom: 15px;
+    }
+
+    .accueil-texte-agenda{
+        padding-bottom: 0px;
+    }
+    
+    .accueil-agenda, .accueil-blog{
+        border-radius: 20px;
+    }
+
+    
+   
+    /* COLUMN Missions de Green Planet */
+    .accueil-greenplanet {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 25px;
+        font-size: 1rem;
+       }
+
+    .accueil-titremissions{
+        margin-top: 20px;
+        margin-bottom:0px;
+        }
+
+    #accueil-img-missions {
+        width: 90%;
+        height: auto;
+        }
+    
+    /* COLUMN Nos ateliers */
+    .accueil-ateliers{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .accueil-fondjaune {
+        width:100%;
+        padding-bottom:10px;
+    }
+
+    .accueil-ecole, .accueil-college, .accueil-lycee{
+        padding: 0px;
+        text-align: center;
+    }
+
+    
+    /* NEWSLETTER */
+    
+    
+    .accueil-newsletter{
+        display: flex;
+        width: 300px;
+        flex-direction: column;
+        margin: auto;
+        margin-top: 20px;
+    }
+    
+    .accueil-infonewsletter, form{
+        flex-direction: column;
+    }
+
+
+
+    
+    }
+
+    
